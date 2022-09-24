@@ -1,0 +1,20 @@
+<div class="container" style="border:1px solid red; text-align:center;">
+    <h1>Employee List</h1>
+    <div  class="col-sm-10 mx-auto mt-5" >
+        <hr/>
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>EmailId</th>
+                <th>DOJ</th>
+            </tr>
+            <tr *ngFor="let EmpData of users">
+                <td>{{EmpData.EmployeeName}}</td>
+                <td>{{EmpData.Department}}</td>
+                <td>{{EmpData.EmailId}}</td>
+                <td>{{EmpData.DOJ}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
